@@ -29,9 +29,7 @@
 
 # 📖 About the project <a name="about-project"></a>
 
-**The Math Magicians**
-
-**The Math magicians** is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+**The Math Magicians** is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 
 - Make simple calculations.
 - Read a random math-related quote.
@@ -77,7 +75,7 @@ In order to run this project you need:
 
 - Clone this repository using this command `git clone [repository link]`.
 - You need to have node package manager already installed in your system, check the installation process [here](https://nodejs.org/en/download) if you don't already have it.
-- Use `npm run dev` to run the application locally hosted on port 3000, remember that you need to run this command on the root directory of the project.
+- Use `npm run start` to run the application locally hosted on port 3000, remember that you need to run this command on the root directory of the project.
 
 ## 👥 Authors <a name="authors"></a>
 
