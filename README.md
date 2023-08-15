@@ -7,7 +7,7 @@
   <h1 align="center"> *+ Math Magicians /-</h1>
 </div>
 <div align="center">
-  <img src="./src/img/calculator.png" alt="logo" width="300" height="auto" />
+  <img src="./src/calculator.png" alt="logo" width="300" height="auto" />
 </div>
 
 # 📗 Table of Contents
