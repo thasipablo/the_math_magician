@@ -1,31 +1,158 @@
-import React from 'react';
+import React, { useState } from 'react';
+import calculate from '../logic/calculate';
 import ResultScreen from './ResultScreen';
 
-const Calculator = () => (
-  <div className="container">
-    <ResultScreen />
-    <div className="blocks">
-      <div className="block-item">AC</div>
-      <div className="block-item">+/-</div>
-      <div className="block-item">%</div>
-      <div className="block-item right-col">÷</div>
-      <div className="block-item">7</div>
-      <div className="block-item">8</div>
-      <div className="block-item">9</div>
-      <div className="block-item right-col">x</div>
-      <div className="block-item">4</div>
-      <div className="block-item">5</div>
-      <div className="block-item">6</div>
-      <div className="block-item right-col">-</div>
-      <div className="block-item">1</div>
-      <div className="block-item">2</div>
-      <div className="block-item">3</div>
-      <div className="block-item right-col">+</div>
-      <div className="block-item zero">0</div>
-      <div className="block-item">.</div>
-      <div className="block-item right-col">=</div>
+const Calculator = () => {
+  const [calculatorData, setCalculatorData] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
+
+  const handleClick = (buttonName) => {
+    setCalculatorData(calculate(calculatorData, buttonName));
+  };
+
+  return (
+    <div className="container">
+      <ResultScreen data={calculatorData.next || calculatorData.total || '0'} />
+      <div className="blocks">
+        <button
+          type="button"
+          className="block-item"
+          onClick={() => handleClick('AC')}
+        >
+          AC
+        </button>
+        <button
+          type="button"
+          className="block-item"
+          onClick={() => handleClick('+/-')}
+        >
+          +/-
+        </button>
+        <button
+          type="button"
+          className="block-item"
+          onClick={() => handleClick('%')}
+        >
+          %
+        </button>
+        <button
+          type="button"
+          className="block-item right-col"
+          onClick={() => handleClick('÷')}
+        >
+          ÷
+        </button>
+        <button
+          type="button"
+          className="block-item"
+          onClick={() => handleClick('7')}
+        >
+          7
+        </button>
+        <button
+          type="button"
+          className="block-item"
+          onClick={() => handleClick('8')}
+        >
+          8
+        </button>
+        <button
+          type="button"
+          className="block-item"
+          onClick={() => handleClick('9')}
+        >
+          9
+        </button>
+        <button
+          type="button"
+          className="block-item right-col"
+          onClick={() => handleClick('x')}
+        >
+          x
+        </button>
+        <button
+          type="button"
+          className="block-item"
+          onClick={() => handleClick('4')}
+        >
+          4
+        </button>
+        <button
+          type="button"
+          className="block-item"
+          onClick={() => handleClick('5')}
+        >
+          5
+        </button>
+        <button
+          type="button"
+          className="block-item"
+          onClick={() => handleClick('6')}
+        >
+          6
+        </button>
+        <button
+          type="button"
+          className="block-item right-col"
+          onClick={() => handleClick('-')}
+        >
+          -
+        </button>
+        <button
+          type="button"
+          className="block-item"
+          onClick={() => handleClick('1')}
+        >
+          1
+        </button>
+        <button
+          type="button"
+          className="block-item"
+          onClick={() => handleClick('2')}
+        >
+          2
+        </button>
+        <button
+          type="button"
+          className="block-item"
+          onClick={() => handleClick('3')}
+        >
+          3
+        </button>
+        <button
+          type="button"
+          className="block-item right-col"
+          onClick={() => handleClick('+')}
+        >
+          +
+        </button>
+        <button
+          type="button"
+          className="block-item zero"
+          onClick={() => handleClick('0')}
+        >
+          0
+        </button>
+        <button
+          type="button"
+          className="block-item"
+          onClick={() => handleClick('.')}
+        >
+          .
+        </button>
+        <button
+          type="button"
+          className="block-item right-col"
+          onClick={() => handleClick('=')}
+        >
+          =
+        </button>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Calculator;
