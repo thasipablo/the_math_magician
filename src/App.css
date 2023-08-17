@@ -47,3 +47,9 @@ body {
 .block-item.right-col {
   background-color: #f0913d;
 }
+
+.quote {
+  padding: 1rem;
+  text-align: center;
+  background-color: #ebebeb;
+}
