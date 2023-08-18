@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
-import ResultScreen from './ResultScreen';
 import Quote from './Quote';
+import ResultScreen from './ResultScreen';
 
 const Calculator = () => {
   const [calculatorData, setCalculatorData] = useState({

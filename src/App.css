@@ -15,7 +15,6 @@ body {
 .container {
   width: 375px;
   margin: 0 auto;
-  background-color: #fff;
 }
 
 .blocks {
@@ -49,7 +48,16 @@ body {
 }
 
 .quote {
-  padding: 1rem;
+  margin-top: 1rem;
+  font-style: italic;
+  line-height: 1.9;
+  color: #5b5c6b;
   text-align: center;
   background-color: #ebebeb;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+.quote .author {
+  font-weight: bold;
 }
