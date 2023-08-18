@@ -19,7 +19,11 @@
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
-    - [How to use](#how-to-use)
+    - [Setup](#setup)
+    - [Prerequisites](#prerequisites)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -69,13 +73,51 @@ The live version is not yet available.
 
 To get a local copy up and running, follow these steps.
 
-### How to use
+### Prerequisites
 
 In order to run this project you need:
 
-- Clone this repository using this command `git clone [repository link]`.
-- You need to have node package manager already installed in your system, check the installation process [here](https://nodejs.org/en/download) if you don't already have it.
-- Use `npm run start` to run the application locally hosted on port 3000, remember that you need to run this command on the root directory of the project.
+```
+  git
+  node.js
+  JavaScript
+```
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```
+  git clone git@github.com:thasipablo/the_math_magician.git
+  cd the_math_magician
+```
+
+### Install
+
+Install this project with:
+
+```
+  npm install
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```
+  npm start
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+```
+  npx stylelint "**/*.[css,scss]"
+  npx eslint "**/*.[js,jsx]"
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
