@@ -33,6 +33,7 @@ body {
 
 .block-item.result {
   color: #fff;
+  font-size: 1.3rem;
   justify-content: end;
   border-color: #ebebeb;
   padding-right: 1rem;
