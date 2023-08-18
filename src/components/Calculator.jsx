@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
-import Quote from './Quote';
 import ResultScreen from './ResultScreen';
 
 const Calculator = () => {
@@ -152,7 +151,6 @@ const Calculator = () => {
           =
         </button>
       </div>
-      <Quote />
     </div>
   );
 };
