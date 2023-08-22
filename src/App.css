@@ -82,14 +82,17 @@ a {
   background-color: #f0913d;
 }
 
+.home-page {
+  line-height: 1.9;
+}
+
 .quote {
+  font-size: 1.4rem;
   margin-top: 1rem;
   font-style: italic;
   line-height: 1.9;
-  color: #5b5c6b;
   text-align: center;
   background-color: #ebebeb;
-  border: 1px solid #fff;
   border-radius: 4px;
 }
 
