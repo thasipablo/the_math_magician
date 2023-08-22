@@ -6,8 +6,9 @@ const Home = () => (
     <header>
       <div>Math Magician</div>
       <nav>
-        <Link to="/calculator" />
-        <Link to="/quotes" />
+        <Link to="/">Home</Link>
+        <Link to="/calculator">Calculator</Link>
+        <Link to="/quotes">Quote</Link>
       </nav>
     </header>
     <Outlet />
