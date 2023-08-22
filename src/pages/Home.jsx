@@ -1,18 +1,21 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
 
 const Home = () => (
-  <main className="main-content">
-    <header>
-      <div>Math Magician</div>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/calculator">Calculator</Link>
-        <Link to="/quotes">Quote</Link>
-      </nav>
-    </header>
-    <Outlet />
-  </main>
+  <>
+    <h1>Welcome to our page !</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id reiciendis
+      numquam dolores, porro a vel quo amet fuga corporis maiores repellat
+      deleniti ipsam placeat itaque ducimus pariatur non possimus? Blanditiis!
+      deleniti ipsam placeat itaque ducimus pariatur non possimus? Blanditiis!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id reiciendis
+      numquam dolores, porro a vel quo amet fuga corporis maiores repellat
+      numquam dolores, porro a vel quo amet fuga corporis maiores repellat
+      deleniti ipsam placeat itaque ducimus pariatur non possimus? Blanditiis!
+    </p>
+  </>
 );
 
 export default Home;
