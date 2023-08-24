@@ -4,7 +4,7 @@ import {
 import './App.css';
 import Calculator from './components/Calculator';
 import Quote from './components/Quote';
-import Home from './pages/Home';
+import Home from './components/Home';
 
 const MainLayout = () => (
   <main className="main-content">
